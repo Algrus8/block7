@@ -1,0 +1,18 @@
+$footer-border-color: #d9fff5;
+$footer-text-color: #7e7e82;
+.footer {
+  border-top: 1px solid $footer-border-color;
+  display: flex;
+  flex-direction: column;
+  &__element {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1rem;
+    color: $footer-text-color;
+    opacity: 0.72;
+  }
+  &__element:nth-child(2){
+	  margin-top: 0;
+  }
+}

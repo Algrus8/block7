@@ -1,0 +1,28 @@
+@import "./fonts.scss";
+@import "./clear.scss";
+@import "./main-content.scss";
+@import "./brands.scss";
+@import "./type-of-texnic.scss";
+@import "./slider.scss";
+@import "./price.scss";
+@import "./get-offer.scss";
+@import "./footer.scss";
+
+$main-background-color: #f8f8f8;
+$price-background-color:#ffffff;
+
+  
+$min-middle-devices: 768px;
+$max-middle-devices: 1119.98px;
+$min-large-devices: 1120px;
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $main-background-color;
+  font-family: "TTLakes", sans-serif;
+}

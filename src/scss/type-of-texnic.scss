@@ -1,0 +1,75 @@
+$texnic-border-color: #eaeaea;
+$texnic-background-color: #ffffff;
+
+$min-middle-devices: 768px;
+$max-middle-devices: 1119.98px;
+$min-large-devices: 1120px;
+
+.type-of-texnic {
+  display: flex;
+  flex: 1 1 auto;
+  @media (min-width:$min-middle-devices){
+    flex-wrap: wrap;
+    
+  }
+  
+  &__element {
+    display: flex;
+    margin: 1rem;
+    width: 240px;
+    height: 160px;
+    border: 1px solid $texnic-border-color;
+    border-radius: 6px;
+    background-color: $texnic-background-color;
+    @media(min-width:$min-middle-devices){
+      width: 224px;
+      margin: 1.5rem 0rem 0rem 1.5rem;
+    }
+  }
+
+  &__content {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    color: $main-text-color;
+    font-weight: 500;
+  }
+
+  &__button {
+    max-width: 40px;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.type-of-texnic-show-all {
+  display: none;
+  margin-left: 24px;
+  margin-right: 9px;
+  margin-bottom: 32px;
+  @media (min-width: $min-middle-devices) {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+
+  &__button {
+    font-family: "TTLakes";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $brands-button-color;
+  }
+}
+
+.inverted {
+  transform: rotate(180deg);
+}
+
+.hidden{
+  display: none;
+}

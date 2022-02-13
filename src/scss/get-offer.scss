@@ -1,0 +1,25 @@
+$get-offer-text-color: #1b1c21;
+
+.get-offer {
+  margin: 0px 1rem 40px 1rem;
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $get-offer-text-color;
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    color: $get-offer-text-color;
+    text-align: start;
+    max-width: 200px;
+  }
+
+  &__button-image {
+    vertical-align: middle;
+  }
+}

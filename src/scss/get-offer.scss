@@ -1,12 +1,15 @@
-$get-offer-text-color: #1b1c21;
-
 .get-offer {
   margin: 0px 1rem 40px 1rem;
+  @media (min-width: $min-middle-devices) {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 55%;
+  }
   &__description {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: $get-offer-text-color;
+    color: $black;
     margin-bottom: 1rem;
   }
 
@@ -14,7 +17,7 @@ $get-offer-text-color: #1b1c21;
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: -0.2px;
-    color: $get-offer-text-color;
+    color: $black;
     text-align: start;
     max-width: 200px;
   }

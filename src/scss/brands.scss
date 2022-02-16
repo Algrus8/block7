@@ -1,17 +1,5 @@
-$brands-title-color: #7e7e82;
-$brands-background-color: #f8f8f8;
-$brands-button-color: #1b1c21;
-$pagination-background-color: #b5b6bc;
-$brands-title-border-color: #D9FFF5;
-
-
-$min-middle-devices: 768px;
-$max-middle-devices: 1119.98px;
-$min-large-devices: 1120px;
-
-
 .brands-title {
-  border-top: 1px solid $brands-title-border-color;
+  border-top: 1px solid $light-turquoise;
   min-width: 320px;
   min-height: 80px;
   padding: 16px;
@@ -32,7 +20,7 @@ $min-large-devices: 1120px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    color: $brands-title-color;
+    color: $gray;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     
   }
@@ -102,7 +90,7 @@ $min-large-devices: 1120px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: $brands-button-color;
+    color: $black;
   }
 }
 

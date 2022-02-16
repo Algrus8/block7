@@ -1,66 +1,115 @@
-$menu-main-text-color: #1b1c21;
-$menu-active-text-color: #7e7e82;
-$menu-background-color:#fff;
-
-.menu{}
-
-
-.menu.open .menu-overlay,
-.menu.open .menu-wrapper{
-  opacity: 1;
+.menu {
+  display: none;
   z-index: 1000;
+  @media (min-width: $min-large-devices) {
+    display: flex;
+  }
+
+  &__blure {
+    background-color: $white;
+    flex-grow: 1;
+    opacity: 0.96;
+    display: none;
+    @media (min-width: $min-middle-devices) {
+      display: block;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    @media (min-width: $max-middle-devices) {
+      display: block;
+    }
+    @media (min-width: $min-large-devices) {
+      position: static;
+    }
+  }
+
+  &__overlay,
+  &__wrapper {
+    z-index: 1000;
+    animation-name: modalopen;
+    animation-duration: 0.7s;
+  }
+
+  &__wrapper {
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "TTLakes", sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    opacity: 1;
+    flex-grow: 1;
+
+    @media (min-width: $min-middle-devices) {
+      flex-grow: 0;
+    }
+
+    @media (min-width: $min-large-devices) {
+      position: static;
+      box-shadow: none;
+      max-height: 900px;
+    }
+  }
+
+  &__footer-down {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
 }
 
-.menu-overlay,
-.menu-wrapper{
-  opacity: 0;
-  z-index: -1;
-}
-
-
-.menu-overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.menu-wrapper {
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  font-family: "TTLakes", sans-serif;
-  font-weight: 500;
-  position: absolute;
-  top: 0;
-  left: 0;
- background-color:$menu-background-color; 
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .menu-header {
   height: 116px;
+  display: flex;
 
   &__close-menu {
-    position: absolute;
-    left: 24px;
-    top: 23px;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    max-height: 40px;
+    @media (min-width: $min-large-devices) {
+      display: none;
+    }
   }
 
   &__logo {
-    position: absolute;
-    left: 80px;
-    top: 19px;
+    margin-left: 1rem;
+    margin-top: 19px;
+    max-height: 51px;
   }
 
   &__menu-search {
-    position: absolute;
-    top: 23px;
-    right: 24px;
+    display: flex;
+    max-height: 40px;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    @media (min-width: $min-large-devices) {
+    }
   }
 }
 
@@ -71,12 +120,6 @@ $menu-background-color:#fff;
   letter-spacing: -0.2px;
   width: max-content;
   flex-grow: 1;
-}
-
-.menu-footer-down {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
 }
 
 .menu-navigation {
@@ -91,7 +134,7 @@ $menu-background-color:#fff;
 
   &__element1::before {
     content: "";
-    border-left: 4px solid #41f6d7;
+    border-left: 4px solid $turquoise;
     width: 4px;
     height: 32px;
     display: inline-block;
@@ -102,15 +145,15 @@ $menu-background-color:#fff;
   }
 }
 .menu-navigation-element > a {
-  color: $menu-main-text-color;
+  color: $black;
 }
 
 .menu-navigation-element:first-child > a {
-  color: $menu-active-text-color;
+  color: $light-gray;
 }
 
 .menu-navigation-element:first-child:hover > a {
-  color: $menu-main-text-color;
+  color: $black;
 }
 
 .menu-footer {
@@ -120,7 +163,7 @@ $menu-background-color:#fff;
   justify-items: flex-end;
   &__email {
     margin-top: 16px;
-    color: $menu-main-text-color;
+    color: $black;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -130,7 +173,7 @@ $menu-background-color:#fff;
   &__phone-number {
     margin-top: 12px;
     margin-bottom: 40px;
-    color: $menu-main-text-color;
+    color: $black;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.6px;
@@ -152,13 +195,13 @@ $menu-background-color:#fff;
     margin-right: 16px;
   }
 }
-.menu-language-switch-buttons {
+.menu-language-switch-button {
   margin-right: 7px;
   line-height: 24px;
   letter-spacing: -0.2px;
   font-size: 16px;
   &:first-child {
-    color: $menu-active-text-color;
+    color: $black;
   }
 }
 

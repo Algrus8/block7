@@ -1,18 +1,51 @@
-$footer-border-color: #d9fff5;
-$footer-text-color: #7e7e82;
 .footer {
-  border-top: 1px solid $footer-border-color;
+  border-top: 1px solid $light-turquoise;
   display: flex;
   flex-direction: column;
-  &__element {
+
+  @media (min-width: $min-middle-devices) {
+    flex-direction: row;
+  }
+  &__element1,
+  &__element2,
+  &__element3,
+  &__element4 {
     margin-top: 1rem;
     text-align: center;
     font-size: 14px;
     line-height: 1rem;
-    color: $footer-text-color;
+    color: $gray;
     opacity: 0.72;
+    @media (min-width: $min-middle-devices) {
+      text-align: left;
+      flex: 1 1 auto;
+    }
   }
-  &__element:nth-child(2){
-	  margin-top: 0;
+  &__container {
+    @media (min-width: $min-middle-devices) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__element2 {
+    margin-top: 0;
+
+    @media (min-width: $min-middle-devices) {
+      width: max-content;
+    }
+  }
+
+  &__element3 {
+    @media (min-width: $min-middle-devices) {
+      text-align: center;
+    }
+  }
+
+  &__element4 {
+    @media (min-width: $min-middle-devices) {
+      text-align: right;
+      margin-right: 1.5rem;
+      max-width: 27%;
+    }
   }
 }

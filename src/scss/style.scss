@@ -1,4 +1,5 @@
 @import "./fonts.scss";
+@import "./vars.scss";
 @import "./clear.scss";
 @import "./main-content.scss";
 @import "./brands.scss";
@@ -9,21 +10,19 @@
 @import "./footer.scss";
 @import "./menu.scss";
 
-$main-background-color: #f8f8f8;
-$price-background-color:#ffffff;
-
-  
-$min-middle-devices: 768px;
-$max-middle-devices: 1119.98px;
-$min-large-devices: 1120px;
-
-
 html,
 body {
   height: 100%;
 }
 
 body {
-  background-color: $main-background-color;
+  background-color: $light-gray;
   font-family: "TTLakes", sans-serif;
+}
+
+.mainwrapper {
+  @media (min-width: $min-large-devices) {
+    display: flex;
+    flex-grow: 1;
+  }
 }

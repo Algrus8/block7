@@ -1,19 +1,13 @@
-$price-background-color: #ffffff;
-$price-description-color: #7e7e82;
-$table-border-color:#EAEAEA;
-
-
 .price {
   @media (min-width: $min-middle-devices) {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    
   }
   &__element {
     min-width: 260px;
     height: 200px;
     border-radius: 6px;
-    background-color: $price-background-color;
+    background-color: $white;
     margin: 1rem 1rem 1rem 0.5rem;
     display: flex;
     flex-direction: column;
@@ -27,7 +21,7 @@ $table-border-color:#EAEAEA;
     // &--gray {
     //   display: none;
     //   @media (min-width: $min-middle-devices) {
-    //     color: $price-description-color;
+    //     color: $gray;
     //     display: flex;
     //     margin: 0rem 1rem 1rem 1rem;
     //     flex: 1 1 auto;
@@ -60,7 +54,7 @@ $table-border-color:#EAEAEA;
   }
 
   &__value--gray {
-    color: $price-description-color;
+    color: $gray;
     letter-spacing: 0;
     opacity: 0.72;
     // margin-bottom: 4px;
@@ -68,10 +62,6 @@ $table-border-color:#EAEAEA;
       display: none;
     }
   }
-
-
-
-
 
   &__table {
     width: 100%;
@@ -82,14 +72,13 @@ $table-border-color:#EAEAEA;
   &__table th,
   &__table td {
     text-align: left;
-   
   }
 
   &__table th {
-    background-color: $main-background-color;
+    background-color: $white;
     font-size: 14px;
     line-height: 1rem;
-    color: $price-description-color;
+    color: $gray;
     opacity: 0.72;
     font-weight: 400;
     padding-top: 1rem;
@@ -98,53 +87,41 @@ $table-border-color:#EAEAEA;
   }
 
   &__table td {
-    background-color: $price-background-color;
-    border-bottom:1px solid $table-border-color;
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
   }
 
   &__table th:first-child,
-  &__table td:first-child{
+  &__table td:first-child {
     padding-left: 1rem;
   }
 
-&__table{
-  padding-left: 1rem;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-}
+  &__table {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
 
-&__table-body{
-}
+  &__table-button {
+    float: right;
+    max-height: 2rem;
+    padding-right: 1rem;
+  }
 
-&__table-button{
-  float: right;
-  max-height: 2rem;
-  padding-right: 1rem;
- 
-}
+  &__table-body tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+  }
 
-&__table-body tr:last-child td:first-child {
-  
-  border-bottom-left-radius: 6px;
-}
+  &__table-body tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+  }
 
-&__table-body tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
-  
-}
-
-&__table-body tr:first-child td:first-child{
-  border-top-left-radius: 6px;
-}
-&__table-body tr:first-child td:last-child{
-  border-top-right-radius: 6px;
-}
-
-
-
-
+  &__table-body tr:first-child td:first-child {
+    border-top-left-radius: 6px;
+  }
+  &__table-body tr:first-child td:last-child {
+    border-top-right-radius: 6px;
+  }
 }

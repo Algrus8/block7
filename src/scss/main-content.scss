@@ -1,7 +1,3 @@
-$main-background-color: #f8f8f8;
-$header-background-color: white;
-$main-text-color: #1b1c21;
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -12,13 +8,13 @@ $main-text-color: #1b1c21;
   flex: 1 1 auto;
   justify-content: space-between;
   align-content: flex-end;
-  background-color: $header-background-color;
+  background-color: $white;
 
-  @media (min-width: 768px) and (max-width: 1119.98px) {
+  @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
     justify-content: flex-end;
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: $min-large-devices) {
     display: none;
   }
 
@@ -27,7 +23,7 @@ $main-text-color: #1b1c21;
     margin-bottom: 24px;
     margin-left: 16px;
     margin-right: 16.73px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       align-self: flex-start;
       order: 1;
       margin: 24px 20px 24px 24px;
@@ -38,7 +34,7 @@ $main-text-color: #1b1c21;
     margin-top: 18.59px;
     margin-bottom: 18.59px;
     margin-right: 16.73px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       margin-right: auto;
       order: 3;
     }
@@ -53,7 +49,7 @@ $main-text-color: #1b1c21;
     margin-top: 28px;
     margin-bottom: 28px;
     margin-right: 20px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       margin-right: 20.73px;
       align-self: flex-start;
       order: 2;
@@ -69,7 +65,7 @@ $main-text-color: #1b1c21;
     display: none;
     margin-top: 28px;
     margin-bottom: 28px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
       order: 7;
       margin: 28px 20px;
@@ -78,7 +74,7 @@ $main-text-color: #1b1c21;
 
   &__call-button {
     display: none;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
       order: 4;
       margin: 24px 0px 24px 16px;
@@ -87,7 +83,7 @@ $main-text-color: #1b1c21;
 
   &__chat-button {
     display: none;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
       order: 5;
       margin: 24px 0px 24px 16px;
@@ -96,7 +92,7 @@ $main-text-color: #1b1c21;
 
   &__profile-button {
     display: none;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
       order: 6;
       margin: 24px 0px 24px 16px;
@@ -107,7 +103,7 @@ $main-text-color: #1b1c21;
     margin-top: 24px;
     margin-bottom: 24px;
     margin-right: 16px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       order: 8;
     }
   }
@@ -116,7 +112,7 @@ $main-text-color: #1b1c21;
     margin-top: 24px;
     margin-bottom: 24px;
     margin-right: 16px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       order: 9;
       margin-right: 24px;
     }
@@ -127,9 +123,9 @@ $main-text-color: #1b1c21;
   display: flex;
   margin-top: 24px;
 
-  @media (min-width: 768px) and (max-width: 1119.98px) {
+  @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
   }
-  @media (min-width: 1120px) {
+  @media (min-width: $min-large-devices) {
     margin-top: 42px;
     margin-bottom: 17px;
   }
@@ -150,18 +146,18 @@ $main-text-color: #1b1c21;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6 px;
-    color: $main-text-color;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    color: $black;
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       margin-left: 20px;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       margin-left: 30px;
     }
   }
 
   &__buttons {
     display: none;
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       display: flex;
       margin-left: auto;
       align-items: center;
@@ -199,12 +195,12 @@ $main-text-color: #1b1c21;
   margin-bottom: 24px;
   margin-left: 16px;
 
-  @media (min-width: 768px) and (max-width: 1119.98px) {
+  @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: 24px;
   }
-  @media (min-width: 1120px) {
+  @media (min-width: $min-large-devices) {
     margin-left: 32px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -220,10 +216,10 @@ $main-text-color: #1b1c21;
     line-height: 24px;
     color: #7e7e82;
     font-size: 1rem;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       padding: 8px 9px 8px 16px;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       padding: 8px 21px;
     }
   }
@@ -232,7 +228,7 @@ $main-text-color: #1b1c21;
     box-sizing: border-box;
     border: 2px solid #b8ffec;
     border-radius: 6px;
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       margin-bottom: 8px;
     }
   }
@@ -247,24 +243,24 @@ $main-text-color: #1b1c21;
 .content {
   display: flex;
   flex-direction: column;
-  @media (min-width: 768px) and (max-width: 1119.98px) {
+  @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
     width: 50%;
   }
-  @media (min-width: 1120px) {
+  @media (min-width: $min-large-devices) {
     width: 50%;
   }
 
   &__body {
     margin: 0px 16px 16px 16px;
-    color: $main-text-color;
+    color: $black;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       margin: 0px 48px 10px 24px;
       line-height: 20px;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       margin: 8px 36px 13.78px 34px;
       line-height: 20px;
     }
@@ -278,10 +274,10 @@ $main-text-color: #1b1c21;
 
     &__icon {
       margin-left: 24px;
-      @media (min-width: 768px) and (max-width: 1119.98px) {
+      @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
         margin-left: 33px;
       }
-      @media (min-width: 1120px) {
+      @media (min-width: $min-large-devices) {
         margin-left: 40px;
       }
     }
@@ -293,8 +289,8 @@ $main-text-color: #1b1c21;
       height: 24px;
       font-weight: 500;
       width: max-content;
-      color: $main-text-color;
-      @media (min-width: 1120px) {
+      color: $black;
+      @media (min-width: $min-large-devices) {
         margin-left: 40px;
       }
     }
@@ -302,35 +298,35 @@ $main-text-color: #1b1c21;
 
   .body__text1 {
     display: none;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
     }
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
     }
   }
 
   .body__text2 {
     display: none;
-    @media (min-width: 768px) and (max-width: 1119.98px) {
+    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
     }
-    @media (min-width: 1120px) {
+    @media (min-width: $min-large-devices) {
       display: inline;
     }
   }
 }
 
 .image-container {
-  background-color: $main-background-color;
+  background-color: $white;
   margin-top: 16px;
   margin-bottom: 24px;
-  @media (min-width: 768px) and (max-width: 1119.98px) {
+  @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
     margin-top: 0px;
     margin-right: 25px;
     flex-basis: 50%;
     margin-bottom: 0px;
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: $min-large-devices) {
     flex-basis: 50%;
     margin-right: 28.6px;
     margin-top: 0px;
@@ -340,16 +336,15 @@ $main-text-color: #1b1c21;
   img {
     display: flex;
     width: 100%;
-   
-    @media (min-width: 768px) {
+
+    @media (min-width: $min-middle-devices) {
       border-radius: 2%;
       flex-grow: 1;
-      
     }
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $min-middle-devices) {
   .main-container {
     display: flex;
     margin-bottom: 2rem;
@@ -358,7 +353,7 @@ $main-text-color: #1b1c21;
 
 br {
   display: none;
-  @media (min-width: 768px) {
+  @media (min-width: $min-middle-devices) {
     display: block;
   }
 }

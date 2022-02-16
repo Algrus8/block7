@@ -1,21 +1,20 @@
-
 .type-of-texnic__pagination,
 .brands-buttons__pagination {
-	position: static;
-	margin-bottom: 1.5rem;
-	@media(min-width: $min-middle-devices){
-		margin: 0;
-	}
- }
+  position: static;
+  margin-bottom: 1.5rem;
+  @media (min-width: $min-middle-devices) {
+    margin: 0;
+  }
+}
 .price__pagination .swiper-pagination-bullet,
- .type-of-texnic__pagination .swiper-pagination-bullet,
- .brands-buttons__pagination .swiper-pagination-bullet {
-	background-color: $pagination-background-color;
-	width: 12px;
-	height: 12px;
- }
+.type-of-texnic__pagination .swiper-pagination-bullet,
+.brands-buttons__pagination .swiper-pagination-bullet {
+  background-color: $pagination-color;
+  width: 12px;
+  height: 12px;
+}
 
- .price__pagination {
-	position: static;
-	margin-bottom: 1rem;
- }
+.price__pagination {
+  position: static;
+  margin-bottom: 1rem;
+}

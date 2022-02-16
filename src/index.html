@@ -235,32 +235,6 @@
 
   <div class="swiper">
     <div class="price swiper-wrapper">
-      <div class="price__element--gray">
-        <p>Ремонтные услуги</p>
-        <p>Цена</p>
-        <p>Срок</p>
-      </div>
-      <div class="price__element swiper-slide">
-        <div class="price__service">
-          <p class="price__value--gray">Ремонтные услуги</p>
-          <p>Тестирование с выдачей технического заключения</p>
-        </div>
-
-        <div class="price__value">
-          <p class="price__value--gray">Цена</p>
-          <p>Бесплатно</p>
-        </div>
-        <div class="price__time">
-          <div class="price__time-element">
-            <p class="price__value--gray">Срок</p>
-            <p>30-120 мин</p>
-          </div>
-          
-          <div class="price__button-container">
-            <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></и>
-          </div>
-        </div>
-      </div>
 
       <div class="price__element swiper-slide">
         <div class="price__service">
@@ -277,9 +251,31 @@
             <p class="price__value--gray">Срок</p>
             <p>30-120 мин</p>
           </div>
-          
+
           <div class="price__button-container">
-            <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></и>
+            <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="price__element swiper-slide">
+        <div class="price__service">
+          <p class="price__value--gray">Ремонтные услуги</p>
+          <p>Замена полифонического динамика</p>
+        </div>
+
+        <div class="price__value">
+          <p class="price__value--gray">Цена</p>
+          <p>Бесплатно</p>
+        </div>
+        <div class="price__time">
+          <div class="price__time-element">
+            <p class="price__value--gray">Срок</p>
+            <p>30-120 мин</p>
+          </div>
+
+          <div class="price__button-container">
+            <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
           </div>
         </div>
       </div>
@@ -287,6 +283,116 @@
     </div>
     <div class="price__pagination swiper-pagination"></div>
   </div>
+
+
+  <div class="price">
+    <table class="price__table">
+      <thead>
+        <tr>
+          <th>Ремонтные услуги</th>
+          <th>Цена</th>
+          <th>Срок</th>
+        </tr>
+      </thead>
+      <tbody class="price__table-body">
+        <tr>
+          <td>Диагностика</td>
+          <td>Бесплатно</td>
+          <td>30 мин</td>
+          <td ><button class="price__table-button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>Замена дисплея</td>
+          <td>1 000 ₽</td>
+          <td>30-120 мин</td>
+          <td ><button class="price__table-button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Замена полифонического динамика</td>
+          <td>1 000 ₽</td>
+          <td>30-120 мин</td>
+          <td ><button class="price__table-button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Тестирование с выдачей технического заключения</td>
+          <td>1 000 ₽</td>
+          <td>30-120 мин</td>
+          <td ><button class="price__table-button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Замена программного обеспечения</td>
+          <td>1 000 ₽</td>
+          <td>30-120 мин</td>
+          <td ><button class="price__table-button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="price">
+    <div class="price__service">
+      <ul>
+        <li class="price__service-element--gray">Ремонтные услуги</li>
+       
+        <li class="price__service-element">Диагностика</li>
+        <span class="price__border"></span>
+        <li class="price__service-element">Замена дисплея</li>
+        <span class="price__border"></span>
+        <li class="price__service-element">Замена полифонического динамика </li>
+        <span class="price__border"></span>
+        <li class="price__service-element">Тестирование с выдачей технического заключения</li>
+        <span class="price__border"></span>
+        <li class="price__service-element">Замена программного обеспечения</li>
+      </ul>
+    </div>
+    <div class="price__value">
+      <ul>
+        <li class="price__value-element--gray">Цена</li>
+        <li class="price__value-element">Бесплатно</li>
+        <li class="price__value-element">1 000 ₽</li>
+        <li class="price__value-element">1 000 ₽</li>
+        <li class="price__value-element">1 000 ₽</li>
+        <li class="price__value-element">1 000 ₽</li>
+      </ul>
+    </div>
+    <div class="price__time">
+      <ul>
+
+        <li class="price__time-element--gray"><span class="price__time-text">Срок</span></li>
+        <li class="price__time-element"><span class="price__time-text">30 мин</span><button class="price__button"
+            title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button> </li>
+        <li class="price__time-element"><span class="price__time-text">30-120 мин</span><button class="price__button"
+          title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button></li>
+        <li class="price__time-element"><span class="price__time-text">30-120 мин</span><button class="price__button"
+          title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button></li>
+        <li class="price__time-element"><span class="price__time-text">30-120 мин</span><button class="price__button"
+          title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button></li>
+        <li class="price__time-element"><span class="price__time-text">30-120 мин</span><button class="price__button"
+          title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button></li>
+      </ul>
+    </div>
+  </div> -->
+
+
 
   <div class="get-offer">
     <div class="get-offer__description">

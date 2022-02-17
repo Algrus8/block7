@@ -267,20 +267,21 @@
   }
 
   .read-more {
+    display: flex;
     line-height: 24px;
     font-size: 16px;
     letter-spacing: -0.2px;
     font-size: 1rem;
+    width: max-content;
+    margin-left: 24px;
 
-    &__icon {
-      margin-left: 24px;
-      @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
-        margin-left: 33px;
-      }
-      @media (min-width: $min-large-devices) {
-        margin-left: 40px;
-      }
+    @media (min-width: $min-middle-devices) {
+      margin-left: 33px;
     }
+    @media (min-width: $min-large-devices) {
+      margin-left: 40px;
+    }
+
 
     &__button {
       margin-left: 16px;
@@ -291,7 +292,7 @@
       width: max-content;
       color: $black;
       @media (min-width: $min-large-devices) {
-        margin-left: 40px;
+        margin-left: 1rem;
       }
     }
   }

@@ -2,9 +2,10 @@
   border-top: 1px solid $light-turquoise;
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 19px;
   @media (min-width: $min-middle-devices) {
     flex-direction: row;
+    padding-bottom: 25px;
   }
   &__element1,
   &__element2,

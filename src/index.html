@@ -70,19 +70,24 @@
     <div class="modal-feedback">
       <div class="modal-feedback__wrapper">
         <div>
-          <button class="modal-feedback__close-button" title="Закрыть"><img src="/src/img/burgerClose.png" alt="Закрыть"></button>
+          <button class="modal-feedback__close-button" title="Закрыть"><img src="/src/img/burgerClose.png"
+              alt="Закрыть"></button>
         </div>
         <div class="modal-feedback__title">
           <span class="modal-feedback__highlit"></span>
           <p class="modal-feedback__title-text">Обратная связь</p>
         </div>
         <div class="modal-feedback__inputs-container">
-          <input type="text">
-
+          <input class="modal-feedback__input" type="text" placeholder="Имя">
+          <input class="modal-feedback__input" type="text" placeholder="Телефон">
+          <input class="modal-feedback__input" type="text" placeholder="Электронная почта">
+          <textarea class="modal-feedback__textarea" cols="30" rows="10" placeholder="Сообщение"></textarea>
         </div>
         <div class="modal-feedback__warning">
-          <p>Нажимая “отправить”, вы даете согласие на <a href="#" title="Условия обработки данных" class="modal-feedback__warning--red">обработку персональных данных</a>и соглашаетесь с
-            нашей <a href="#" title="Политика конфиденциальности" class="modal-feedback__warning--red"> политикой конфиденциальности </a></p>
+          <p>Нажимая “отправить”, вы даете согласие на <a href="#" title="Условия обработки данных"
+              class="modal-feedback__warning--red">обработку персональных данных</a> и соглашаетесь с
+            нашей <a href="#" title="Политика конфиденциальности" class="modal-feedback__warning--red"> политикой
+              конфиденциальности </a></p>
         </div>
         <div class="modal-feedback__button-container">
           <button class="modal-feedback__button" title="Отправить"><img src="/src/img/send.png" alt="Отправить">
@@ -93,10 +98,36 @@
     </div>
 
 
+    <div id="call-modal" class="modal-feedback">
+      <div class="modal-feedback__wrapper">
+        <div>
+          <button id="call-modal__closeButton" class="modal-feedback__close-button" title="Закрыть"><img
+              src="/src/img/burgerClose.png" alt="Закрыть"></button>
+        </div>
+        <div class="modal-feedback__title">
+          <span class="modal-feedback__highlit"></span>
+          <p class="modal-feedback__title-text">Обратная связь</p>
+        </div>
+        <div class="modal-feedback__inputs-container">
+          <input class="modal-feedback__input" type="tel" placeholder="Телефон">
+        </div>
+        <div class="modal-feedback__warning">
+          <p>Нажимая “отправить”, вы даете согласие на <a href="#" title="Условия обработки данных"
+              class="modal-feedback__warning--red">обработку персональных данных</a> и соглашаетесь с
+            нашей <a href="#" title="Политика конфиденциальности" class="modal-feedback__warning--red"> политикой
+              конфиденциальности </a></p>
+        </div>
+        <div class="modal-feedback__button-container">
+          <button class="modal-feedback__button" title="Отправить"><img src="/src/img/send.png" alt="Отправить">
+          </button>
+        </div>
+      </div>
+      <div id="call-modal__blure" class="modal-feedback__blure"></div>
+    </div>
 
 
 
-
+    
 
     <div class="mainwrapper__split">
 
@@ -185,6 +216,22 @@
                 Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
                 очередь, советуют нас родным и близким.
               </p>
+
+              <p class="body__text hidden">
+                <br>
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <br />
+              <p class="body__text hidden">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера
+              </p>
+             
+              
+
+
             </div>
             <div class="content__read-more read-more">
               <button class="read-more__button-icon" title="Читать далее">
@@ -369,6 +416,73 @@
               </div>
             </div>
           </div>
+
+          <div class="price__element swiper-slide">
+            <div class="price__service">
+              <p class="price__value--gray">Ремонтные услуги</p>
+              <p>Замена дисплея</p>
+            </div>
+
+            <div class="price__value">
+              <p class="price__value--gray">Цена</p>
+              <p>1 000 ₽</p>
+            </div>
+            <div class="price__time">
+              <div class="price__time-element">
+                <p class="price__value--gray">Срок</p>
+                <p>30-120 мин</p>
+              </div>
+
+              <div class="price__button-container">
+                <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="price__element swiper-slide">
+            <div class="price__service">
+              <p class="price__value--gray">Ремонтные услуги</p>
+              <p>Замена программного обеспечения</p>
+            </div>
+
+            <div class="price__value">
+              <p class="price__value--gray">Цена</p>
+              <p>1 000 ₽</p>
+            </div>
+            <div class="price__time">
+              <div class="price__time-element">
+                <p class="price__value--gray">Срок</p>
+                <p>30-120 мин</p>
+              </div>
+              <div class="price__button-container">
+                <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="price__element swiper-slide">
+            <div class="price__service">
+              <p class="price__value--gray">Ремонтные услуги</p>
+              <p>Замена программного обеспечения</p>
+            </div>
+
+            <div class="price__value">
+              <p class="price__value--gray">Цена</p>
+              <p>1 000 ₽</p>
+            </div>
+            <div class="price__time">
+              <div class="price__time-element">
+                <p class="price__value--gray">Срок</p>
+                <p>30-120 мин</p>
+              </div>
+              <div class="price__button-container">
+                <button class="price__button" title="Заказать"><img src="./img/Group 10.png" alt="Заказать"></button>
+              </div>
+            </div>
+          </div>
+
 
         </div>
         <div class="price__pagination swiper-pagination"></div>

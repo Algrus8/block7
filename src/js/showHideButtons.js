@@ -2,7 +2,7 @@ import { showHide } from "./showHide";
 
 const typeOfTexnicShowAll = document.querySelector('.type-of-texnic-show-all');
 const brandsShowAll = document.querySelector('.brands-show-all');
-
+const readMore = document.querySelector('.content__read-more')
 
 typeOfTexnicShowAll.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -25,3 +25,17 @@ brandsShowAll.addEventListener('click', function(evt){
   
   showHide(brandsCollection,brandsShowAllButton,brandsIcon, 6)
 })
+
+
+
+readMore.addEventListener('click', function(evt){
+  evt.preventDefault();
+  const readMoreButton = document.querySelector('.read-more__button');  
+  const readMoreIcon = document.querySelector('.read-more__button-icon');
+  const readMoreCollection = document.querySelectorAll('.body__text');
+  console.log(readMoreCollection)
+  
+  showHide(readMoreCollection,readMoreButton,readMoreIcon, 1)
+})
+
+  

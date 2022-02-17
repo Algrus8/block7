@@ -1,0 +1,30 @@
+@keyframes back-modal-open {
+	from {
+	  opacity: 0;
+	  transform: translateX(200px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0px);
+	}
+ }
+ 
+ @keyframes blure-opacity {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 0.96;
+	}
+ }
+ 
+ @keyframes modalopen {
+	from {
+	  opacity: 0;
+	  transform: translateX(-200px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0px);
+	}
+ }

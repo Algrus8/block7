@@ -5,6 +5,11 @@
     margin-top: 1.5rem;
     max-width: 55%;
   }
+  @media (min-width: $min-large-devices) {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    max-width: 38%;
+  }
   &__description {
     font-size: 14px;
     line-height: 20px;
@@ -20,6 +25,9 @@
     color: $black;
     text-align: start;
     max-width: 200px;
+    @media (min-width: $min-large-devices) {
+      max-width: 350px;
+    }
   }
 
   &__button-image {

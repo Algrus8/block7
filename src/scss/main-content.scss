@@ -256,13 +256,12 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
+    @media (min-width: $min-middle-devices) {
       margin: 0px 48px 10px 24px;
       line-height: 20px;
     }
     @media (min-width: $min-large-devices) {
       margin: 8px 36px 13.78px 34px;
-      line-height: 20px;
     }
   }
 
@@ -281,7 +280,6 @@
     @media (min-width: $min-large-devices) {
       margin-left: 40px;
     }
-
 
     &__button {
       margin-left: 16px;
@@ -302,14 +300,11 @@
     @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
       display: inline;
     }
-    @media (min-width: $min-large-devices) {
-    }
   }
 
   .body__text2 {
     display: none;
-    @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {
-    }
+
     @media (min-width: $min-large-devices) {
       display: inline;
     }
@@ -317,7 +312,7 @@
 }
 
 .image-container {
-  background-color: $white;
+  background-color: $light-gray;
   margin-top: 16px;
   margin-bottom: 24px;
   @media (min-width: $min-middle-devices) and (max-width: $max-middle-devices) {

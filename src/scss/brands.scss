@@ -22,10 +22,8 @@
     text-transform: uppercase;
     color: $gray;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    
   }
 }
-
 
 .brands-buttons .hidden {
   display: none;
@@ -82,6 +80,9 @@
   margin-bottom: 32px;
   @media (min-width: $min-middle-devices) {
     display: flex;
+  }
+  @media (min-width: $min-large-devices) {
+    margin-bottom: 50px;
   }
 
   &__button {

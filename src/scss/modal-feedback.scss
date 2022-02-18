@@ -31,7 +31,7 @@
     background-color: $white;
     flex-grow: 1;
     opacity: 0.96;
-    animation:  blure-opacity;
+    animation: blure-opacity;
     animation-duration: 0.7s;
     @media (min-width: $min-middle-devices) {
       display: block;
@@ -147,4 +147,3 @@
     }
   }
 }
-

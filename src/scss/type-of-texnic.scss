@@ -1,5 +1,3 @@
-
-
 .type-of-texnic {
   display: flex;
   flex: 1 1 auto;
@@ -18,6 +16,10 @@
     @media (min-width: $min-middle-devices) {
       width: 224px;
       margin: 1.5rem 0rem 0rem 1.5rem;
+    }
+    @media (min-width: $min-large-devices) {
+      width: 240px;
+      margin-left: 2rem;
     }
   }
 
@@ -48,6 +50,9 @@
   @media (min-width: $min-middle-devices) {
     display: flex;
     margin-top: 1.5rem;
+  }
+  @media (min-width: $min-large-devices) {
+    margin-bottom: 50px;
   }
 
   &__button {

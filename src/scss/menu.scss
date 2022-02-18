@@ -136,14 +136,16 @@
 
   &__element1::before {
     content: "";
-    border-left: 4px solid $turquoise;
-    width: 4px;
+
+    background-color: $turquoise;
+    min-width: 4px;
     height: 32px;
     display: inline-block;
     border-radius: 0 100px 100px 0;
-    position: absolute;
-    top: 116px;
-    left: 0px;
+    align-content: center;
+    position: relative;
+    top: 10px;
+    right: 20px;
   }
 }
 .menu-navigation-element > a {
@@ -203,6 +205,6 @@
   letter-spacing: -0.2px;
   font-size: 16px;
   &:first-child {
-    color: $black;
+    color: $gray;
   }
 }

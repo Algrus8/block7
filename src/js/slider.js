@@ -1,9 +1,11 @@
 import { removeClass } from "./removeClass.js";
 
-
 let brandsSlider = null;
 const windowWidthIsMiddle = window.matchMedia("(min-width: 768px)");
 const buttons = document.querySelectorAll(".brands-buttons__container");
+const paginationBullets = document.querySelectorAll(
+  ".swiper-pagination-bullet"
+);
 
 function brandsSliderInit() {
   if (!brandsSlider) {
@@ -39,10 +41,18 @@ function widthIsMiddle(e) {
   } else {
     // buttons[6].classList.remove("hidden");
     // buttons[7].classList.remove("hidden");
-    removeClass(swiperSlide, "hidden")
+    removeClass(swiperSlide, "hidden");
     brandsSliderInit();
   }
 }
 
 windowWidthIsMiddle.addEventListener("resize", widthIsMiddle);
 widthIsMiddle(windowWidthIsMiddle);
+
+function addMargin(collection, margin) {
+  for (let i = 0; i < collection.length; i++) {
+    collection[i].style.margin = margin;
+  }
+}
+
+addMargin(paginationBullets, "0px 12px 0px 0px");

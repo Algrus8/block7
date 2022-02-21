@@ -21,21 +21,21 @@ function priceChange() {
           <td>Диагностика</td>
           <td>Бесплатно</td>
           <td>30 мин</td>
-          <td ><button class="price__table-button" title="Заказать"><img src="/src/assets/img/Group-10.png" alt="Заказать"></button>
+          <td ><button class="price__table-button" title="Заказать"><img src="img/Group-10.png" alt="Заказать"></button>
           </td>
         </tr>
         <tr>
           <td>Замена дисплея</td>
           <td>1 000 ₽</td>
           <td>30-120 мин</td>
-          <td ><button class="price__table-button" title="Заказать"><img src="./src/assets/img/Group-10.png" alt="Заказать"></button>
+          <td ><button class="price__table-button" title="Заказать"><img src="img/Group-10.png" alt="Заказать"></button>
           </td>
         </tr>
         <tr>
           <td>Замена полифонического динамика</td>
           <td>1 000 ₽</td>
           <td>30-120 мин</td>
-          <td ><button class="price__table-button" title="Заказать"><img src="/src/assets/img/Group-10.png" alt="Заказать"></button>
+          <td ><button class="price__table-button" title="Заказать"><img src="img/Group-10.png" alt="Заказать"></button>
           </td>
         </tr>
 
@@ -43,7 +43,7 @@ function priceChange() {
           <td>Тестирование с выдачей технического заключения</td>
           <td>1 000 ₽</td>
           <td>30-120 мин</td>
-          <td ><button class="price__table-button" title="Заказать"><img src="/src/assets/img/Group-10.png" alt="Заказать"></button>
+          <td ><button class="price__table-button" title="Заказать"><img src="img/Group-10.png" alt="Заказать"></button>
           </td>
         </tr>
 
@@ -51,7 +51,7 @@ function priceChange() {
           <td>Замена программного обеспечения</td>
           <td>1 000 ₽</td>
           <td>30-120 мин</td>
-          <td ><button class="price__table-button" title="Заказать"><img src="/src/assets/img/Group-10.png" alt="Заказать"></button>
+          <td ><button class="price__table-button" title="Заказать"><img src="img/Group-10.png" alt="Заказать"></button>
           </td>
         </tr>
       </tbody>

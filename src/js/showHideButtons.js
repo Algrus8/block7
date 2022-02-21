@@ -5,8 +5,8 @@ const brandsShowAll = document.querySelector(".brands-show-all");
 const readMore = document.querySelector(".content__read-more");
 const windowWidthIsLarge = window.matchMedia("(min-width: 1120px)");
 
-typeOfTexnicShowAll.addEventListener("click", function (evt) {
-  evt.preventDefault();
+typeOfTexnicShowAll.addEventListener("click", function (event) {
+  event.preventDefault();
   const typesOfTexnicCollection = document.querySelectorAll(
     ".type-of-texnic__element"
   );
@@ -34,8 +34,8 @@ typeOfTexnicShowAll.addEventListener("click", function (evt) {
   }
 });
 
-brandsShowAll.addEventListener("click", function (evt) {
-  evt.preventDefault();
+brandsShowAll.addEventListener("click", function (event) {
+  event.preventDefault();
   const brandsCollection = document.querySelectorAll(
     ".brands-buttons__container"
   );
@@ -51,8 +51,8 @@ brandsShowAll.addEventListener("click", function (evt) {
   }
 });
 
-readMore.addEventListener("click", function (evt) {
-  evt.preventDefault();
+readMore.addEventListener("click", function (event) {
+  event.preventDefault();
   const readMoreButton = document.querySelector(".read-more__button");
   const readMoreIcon = document.querySelector(".read-more__button-icon");
   const readMoreCollection = document.querySelectorAll(".body__text");

@@ -15,8 +15,8 @@ function closeModal() {
   menuModal.style.display = "none";
 }
 
-function clickOutside(e) {
-  if (e.target == menuBlure) {
+function clickOutside(event) {
+  if (event.target == menuBlure) {
     menuModal.style.display = "none";
   }
 }
@@ -32,8 +32,8 @@ feedBackOpen.addEventListener("click", function () {
 feedBackClose.addEventListener("click", function () {
   feedBackModal.style.display = "none";
 });
-window.addEventListener("click", function (e) {
-  if (e.target == feedBackBlure) {
+window.addEventListener("click", function (event) {
+  if (event.target == feedBackBlure) {
     feedBackModal.style.display = "none";
   }
 });
@@ -51,8 +51,8 @@ callModalOpen.addEventListener("click", function () {
 callModalClose.addEventListener("click", function () {
   callModal.style.display = "none";
 });
-window.addEventListener("click", function (e) {
-  if (e.target == callModalBlure) {
+window.addEventListener("click", function (event) {
+  if (event.target == callModalBlure) {
     callModal.style.display = "none";
   }
 });

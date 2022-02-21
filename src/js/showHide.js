@@ -1,7 +1,7 @@
 import { addClass } from "./addClass.js";
 import { removeClass } from "./removeClass.js";
 
-export let showHide = function (
+export const showHide = function (
   collection,
   button,
   buttonIcon,

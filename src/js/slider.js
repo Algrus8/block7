@@ -28,19 +28,17 @@ function brandsSliderDestroy() {
   }
 }
 
-function widthIsMiddle(e) {
+function widthIsMiddle(event) {
   const swiper = document.querySelectorAll(".swiper");
   const swiperWrapper = document.querySelectorAll(".swiper-wrapper");
   const swiperSlide = document.querySelectorAll(".swiper-slide");
 
-  if (e.matches) {
+  if (event.matches) {
     brandsSliderDestroy();
     removeClass(swiper, "swiper");
     removeClass(swiperWrapper, "swiper-wrapper");
     removeClass(swiperSlide, "swiper-slide");
   } else {
-    // buttons[6].classList.remove("hidden");
-    // buttons[7].classList.remove("hidden");
     removeClass(swiperSlide, "hidden");
     brandsSliderInit();
   }

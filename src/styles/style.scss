@@ -25,7 +25,8 @@ body {
 .mainwrapper {
   @media (min-width: $min-large-devices) {
     display: flex;
-    width: 1440px;
-    margin: 0 auto;
+  }
+  &__split1{
+    min-width: 21.5%;
   }
 }

@@ -221,16 +221,16 @@
     }
     @media (min-width: $min-large-devices) {
       padding: 8px 21px;
+      margin-bottom: 8px;
     }
   }
 
-  & li:first-child a {
+  &__element:hover,
+  &__element:focus {
+    outline: none;
     box-sizing: border-box;
     border: 2px solid #b8ffec;
     border-radius: 6px;
-    @media (min-width: $min-large-devices) {
-      margin-bottom: 8px;
-    }
   }
 
   &::-webkit-scrollbar {
